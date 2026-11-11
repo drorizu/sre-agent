@@ -114,11 +114,11 @@ Start the application:
 uvicorn sre_agent.main:app --reload
 ```
 
-API documentation:
+## API documentation:
 
-Swagger UI: http://localhost:8000/docs
-ReDoc: http://localhost:8000/redoc
-Health check: http://localhost:8000/health
+- Swagger UI: http://localhost:8000/docs
+- ReDoc: http://localhost:8000/redoc
+- Health check: http://localhost:8000/health
 
 ## Development
 
