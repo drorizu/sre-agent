@@ -1,0 +1,59 @@
+Git
+
+.git .gitignore .gitattributes
+
+Environment files and secrets
+
+.env .env.* !.env.example *.pem *.key *.p12 *.pfx secrets/ credentials/
+
+Python virtual environments
+
+.venv/ venv/ env/ ENV/
+
+Python cache
+
+pycache/ *.py[cod] *$py.class *.so
+
+Testing and coverage
+
+.pytest_cache/ .coverage .coverage.* htmlcov/ .tox/ .nox/
+
+Type checking and linting
+
+.mypy_cache/ .ruff_cache/ .dmypy.json .pyre/
+
+Build artifacts
+
+build/ dist/ *.egg-info/ .eggs/ wheels/
+
+IDE and editor files
+
+.idea/ .vscode/ *.swp *.swo
+
+OS files
+
+.DS_Store Thumbs.db desktop.ini
+
+Logs
+
+*.log logs/
+
+Temporary files
+
+tmp/ temp/ *.tmp *.bak
+
+Documentation build output
+
+site/
+
+Local databases
+
+*.db *.sqlite *.sqlite3
+
+Docker artifacts
+
+docker-compose.override.yml
+
+Generated reports
+
+reports/ artifacts/
