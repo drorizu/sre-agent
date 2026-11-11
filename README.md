@@ -67,7 +67,7 @@ Core components include:
 Clone the repository:
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone github/drorizu/sre-agent.git
 cd sre-agent
 ```
 
