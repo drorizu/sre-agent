@@ -176,8 +176,7 @@ See docs/security.md.
 Proprietary software. All rights reserved.
 
 ## Project Structure
-```
-just give the codes one by one to fill these: 
+``` 
 sre-agent/
 │
 ├── README.md
