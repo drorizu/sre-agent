@@ -1,0 +1,95 @@
+==========================================
+Environment variables and secrets
+==========================================
+
+.env .env.* !.env.example *.pem *.key *.p12 *.pfx secrets/ credentials/ *.secret
+
+==========================================
+Python
+==========================================
+
+pycache/ *.py[cod] *$py.class *.so .Python *.egg *.egg-info/ .eggs/ build/ dist/ wheels/ pip-wheel-metadata/ share/python-wheels/
+
+==========================================
+Virtual environments
+==========================================
+
+.venv/ venv/ env/ ENV/
+
+==========================================
+Testing and coverage
+==========================================
+
+.pytest_cache/ .coverage .coverage.* htmlcov/ .tox/ .nox/ test-results/ junit.xml
+
+==========================================
+Type checking and linting
+==========================================
+
+.mypy_cache/ .dmypy.json dmypy.json .ruff_cache/ .pyre/
+
+==========================================
+IDEs and editors
+==========================================
+
+.idea/ .vscode/ *.swp *.swo *.swn .project .pydevproject
+
+==========================================
+Operating systems
+==========================================
+
+.DS_Store Thumbs.db desktop.ini $RECYCLE.BIN/
+
+==========================================
+Logs and runtime files
+==========================================
+
+*.log logs/ *.pid *.sock
+
+==========================================
+Databases and local data
+==========================================
+
+*.db *.sqlite *.sqlite3 data/ postgres_data/ redis_data/
+
+==========================================
+Docker
+==========================================
+
+docker-compose.override.yml
+
+==========================================
+Temporary and generated files
+==========================================
+
+tmp/ temp/ *.tmp *.bak *.orig .cache/
+
+==========================================
+Documentation build output
+==========================================
+
+site/
+
+==========================================
+Generated reports and artifacts
+==========================================
+
+reports/ artifacts/ coverage.xml
+
+==========================================
+Celery
+==========================================
+
+celerybeat-schedule celerybeat.pid
+
+==========================================
+Jupyter
+==========================================
+
+.ipynb_checkpoints/
+
+==========================================
+Windows
+==========================================
+
+*.lnk
