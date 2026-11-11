@@ -42,19 +42,20 @@ Core components include:
 - Workers: Asynchronous background processing.
 
 ## Technology Stack
-| Component	| Technology |
-| Language	| Python 3.12+ |
-| API framework	| FastAPI |
-| Data validation	| Pydantic |
-| ORM	| SQLAlchemy 2.0 |
-| Database	| PostgreSQL |
-| Migrations	| Alembic |
-| Cache and broker |	Redis |
-| Background tasks	| Celery |
+| Component | Technology |
+|---|---|
+| Language | Python 3.12+ |
+| API framework | FastAPI |
+| Data validation | Pydantic |
+| ORM | SQLAlchemy 2.0 |
+| Database | PostgreSQL |
+| Migrations | Alembic |
+| Cache and broker | Redis |
+| Background tasks | Celery |
 | Containers | Docker |
-| Testing	| Pytest |
+| Testing | Pytest |
 | Code quality | Ruff and Mypy |
-| Observability	| OpenTelemetry |
+| Observability | OpenTelemetry |
 
 ## Requirements
 - Python 3.12 or newer
@@ -118,7 +119,8 @@ API documentation:
 Swagger UI: http://localhost:8000/docs
 ReDoc: http://localhost:8000/redoc
 Health check: http://localhost:8000/health
-Development
+
+## Development
 
 Run tests:
 
