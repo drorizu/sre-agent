@@ -175,6 +175,184 @@ See docs/security.md.
 
 Proprietary software. All rights reserved.
 
+## Project Structure
+```
+just give the codes one by one to fill these: 
+sre-agent/
+│
+├── README.md
+├── LICENSE
+├── pyproject.toml
+├── Makefile
+├── Dockerfile
+├── docker-compose.yml
+├── .dockerignore
+├── .gitignore
+├── .env.example
+├── alembic.ini
+│
+├── alembic/
+│   ├── env.py
+│   └── versions/
+│
+├── src/
+│   └── sre_agent/
+│       ├── __init__.py
+│       ├── main.py
+│       │
+│       ├── api/
+│       │   ├── __init__.py
+│       │   ├── dependencies.py
+│       │   ├── middleware.py
+│       │   ├── routes/
+│       │   │   ├── health.py
+│       │   │   ├── investigations.py
+│       │   │   ├── organizations.py
+│       │   │   ├── connectors.py
+│       │   │   ├── usage.py
+│       │   │   └── admin.py
+│       │   └── schemas/
+│       │       ├── common.py
+│       │       ├── investigation.py
+│       │       ├── connector.py
+│       │       └── organization.py
+│       │
+│       ├── core/
+│       │   ├── config.py
+│       │   ├── logging.py
+│       │   ├── exceptions.py
+│       │   ├── lifecycle.py
+│       │   └── constants.py
+│       │
+│       ├── agent/
+│       │   ├── llm/
+│       │   │   ├── base.py
+│       │   │   ├── client.py
+│       │   │   └── providers/
+│       │   ├── prompts/
+│       │   ├── context/
+│       │   └── planning/
+│       │
+│       ├── orchestrators/
+│       │   ├── agent_orchestrator.py
+│       │   └── investigation_orchestrator.py
+│       │
+│       ├── skills/
+│       │   ├── base.py
+│       │   ├── registry.py
+│       │   ├── loader.py
+│       │   └── infrastructure/
+│       │       ├── cpu.py
+│       │       ├── memory.py
+│       │       ├── disk.py
+│       │       ├── health.py
+│       │       └── logs.py
+│       │
+│       ├── plugins/
+│       │   ├── base.py
+│       │   ├── manager.py
+│       │   ├── registry.py
+│       │   └── manifest.py
+│       │
+│       ├── connectors/
+│       │   ├── base.py
+│       │   ├── registry.py
+│       │   ├── manager.py
+│       │   ├── prometheus/
+│       │   ├── grafana/
+│       │   ├── kubernetes/
+│       │   ├── aws/
+│       │   └── databases/
+│       │
+│       ├── mcp/
+│       │   ├── client.py
+│       │   ├── server.py
+│       │   ├── registry.py
+│       │   └── adapters.py
+│       │
+│       ├── tools/
+│       │   ├── base.py
+│       │   ├── registry.py
+│       │   ├── executor.py
+│       │   ├── validation.py
+│       │   └── policies.py
+│       │
+│       ├── investigations/
+│       │   ├── models.py
+│       │   ├── repository.py
+│       │   ├── state_manager.py
+│       │   └── lifecycle.py
+│       │
+│       ├── tenancy/
+│       │   ├── context.py
+│       │   ├── models.py
+│       │   ├── repository.py
+│       │   └── isolation.py
+│       │
+│       ├── auth/
+│       │   ├── authentication.py
+│       │   ├── authorization.py
+│       │   ├── rbac.py
+│       │   └── tokens.py
+│       │
+│       ├── governance/
+│       │   ├── permissions.py
+│       │   ├── policies.py
+│       │   ├── approvals.py
+│       │   └── audit.py
+│       │
+│       ├── observability/
+│       │   ├── telemetry.py
+│       │   ├── tracing.py
+│       │   ├── metrics.py
+│       │   ├── instrumentation.py
+│       │   └── llm_tracing.py
+│       │
+│       ├── billing/
+│       │   ├── models.py
+│       │   ├── metering.py
+│       │   ├── entitlements.py
+│       │   └── usage.py
+│       │
+│       ├── persistence/
+│       │   ├── database.py
+│       │   ├── models/
+│       │   └── repositories/
+│       │
+│       ├── workers/
+│       │   ├── worker.py
+│       │   └── tasks/
+│       │
+│       └── services/
+│           ├── response_service.py
+│           └── investigation_service.py
+│
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   ├── contract/
+│   ├── security/
+│   └── e2e/
+│
+├── deploy/
+│   ├── docker/
+│   ├── kubernetes/
+│   └── monitoring/
+│
+├── docs/
+│   ├── architecture.md
+│   ├── security.md
+│   ├── api.md
+│   ├── connectors.md
+│   ├── plugins.md
+│   └── development.md
+│
+└── scripts/
+    ├── create_admin.py
+    ├── migrate.py
+    └── seed.py
+```
+
 See LICENSE for details.
 
 ## Disclaimer
